@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+.logo h1{
+    margin: 0;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: purple;
+}
+.container > *{
+    flex: 1;
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    background-color: lightblue;
+}
+span{
+    display: flex;
+    justify-content: right;
+}
