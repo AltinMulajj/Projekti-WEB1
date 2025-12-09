@@ -6,36 +6,62 @@
     <title>Makeup Store</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="logo">
+      <div class="top-bar">
+        <div class="left">
           <h1><a href="index.html">Welcome to Perla</a></h1>
-        </nav>
-        <form
-          style="display: inline"
-          action="search.html"
-          method="get"
-          role="search"
-          target="_self"
-        >
-          <input id="Q" type="search" placeholder="search..." required />
-          <button type="submit">Search</button>
-        </form>
+        </div>
 
-        <nav>
-          <a href="signin.html">Sign In</a>
-          <a href="cart.html">Cart</a>
-        </nav>
+        <div class="right">
+          <form
+            style="display: inline"
+            action="search.html"
+            method="get"
+            role="search"
+            target="_self"
+          >
+            <input id="Q" type="search" placeholder="search..." required />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <nav class="search">
+            <a href="signin.html"><i class="fas fa-user"></i> </a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </nav>
+        </div>
       </div>
 
       <section class="black">
         <nav>
-          <ul class="container" style="list-style-type: none">
+          <ul class="nav-menu">
             <li><a href="new.html">New</a></li>
-            <li><a href="makeup.html">Make Up</a></li>
-            <li><a href="skincare.html">Skincare</a></li>
+
+            <li>
+              <a href="makeup.html">Make Up</a>
+              <div class="dropdown">
+                <a href="product.html">Face</a>
+                <a href="product.html">Eyes</a>
+                <a href="product.html">Lips</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="skincare.html">Skincare</a>
+              <div class="dropdown">
+                <a href="product.html">Cleansers</a>
+                <a href="product.html">Moisturizers</a>
+                <a href="product.html">Masks</a>
+              </div>
+            </li>
+
             <li><a href="flagrance.html">Flagrance</a></li>
             <li><a href="hair.html">Hair</a></li>
             <li><a href="toolsandbrushes.html">Tools & Brushes</a></li>
@@ -50,28 +76,60 @@
         <div class="carousel-wrapper">
           <div class="carousel-track">
             <div class="product-card-1-0">
-              <a href="product.html"><img src="images/prod-12.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/blush.jpg" /></a>
+              <h3>Blush</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Blush"
+                data-price="13.00"
+                data-img="images/blush.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-0">
-              <a href="product.html"><img src="images/prod-22.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/bronzer.jpg" /></a>
+              <h3>Bronzer</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Bronzer"
+                data-price="13.00"
+                data-img="images/bronzer.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-0">
-              <a href="product.html"><img src="images/prod-32.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/cleanser.jpg" /></a>
+              <h3>Cleanser</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Cleanser"
+                data-price="13.00"
+                data-img="images/cleanser.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-0">
-              <a href="product.html"><img src="images/prod-42.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/concealer.jpg" /></a>
+              <h3>Concealer</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Concealer"
+                data-price="13.00"
+                data-img="images/concealer.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
@@ -79,106 +137,234 @@
       <section class="section2">
         <h2>Most Used Products</h2>
         <div class="carousel-wrapper">
-          <button class="carousel-btn left left">&#8249;</button>
-          <div class="carousel-track" id="carouselTrack">
+          <button class="carousel-btn left left1">&#8249;</button>
+          <div class="carousel-track" id="carouselTrack1">
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-11.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/eyebrowpencil.jpg" /></a>
+              <h3>Eyebrow Pencil</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Eyebrow Pencil"
+                data-price="13.00"
+                data-img="images/eyebrowpencil.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-21.jpg" /></a>
-              <h3>Produkti 2</h3>
+              <a href="product.html"><img src="images/eyecream.jpg" /></a>
+              <h3>Eye Cream</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Eye Cream"
+                data-price="13.00"
+                data-img="images/eyecream.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-31.jpg" /></a>
-              <h3>Produkti 3</h3>
+              <a href="product.html"><img src="images/eyeliner.jpg" /></a>
+              <h3>Eye Liner</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Eye Liner"
+                data-price="13.00"
+                data-img="images/eyeliner.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-41.jpg" /></a>
-              <h3>Produkti 4</h3>
+              <a href="product.html"><img src="images/eyeshadowpalette.jpg" /></a>
+              <h3>Eyeshadow Palette</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Eyeshadow Palette"
+                data-price="13.00"
+                data-img="images/eyeshadowpalette.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-51.jpg" /></a>
-              <h3>Produkti 5</h3>
+              <a href="product.html"><img src="images/facemask.jpg" /></a>
+              <h3>Facemask</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Facemask"
+                data-price="13.00"
+                data-img="images/facemask.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-61.jpg" /></a>
-              <h3>Produkti 6</h3>
+              <a href="product.html"><img src="images/faceroller.jpg" /></a>
+              <h3>Faceroller</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Faceroller"
+                data-price="13.00"
+                data-img="images/faceroller.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-71.jpg" /></a>
-              <h3>Produkti 7</h3>
+              <a href="product.html"><img src="images/foundation.jpg" /></a>
+              <h3>Foundation</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Foundation"
+                data-price="13.00"
+                data-img="images/foundation.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-81.jpg" /></a>
-              <h3>Produkti 8</h3>
+              <a href="product.html"><img src="images/hairoil.jpg" /></a>
+              <h3>Hair Oil</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Hair Oil"
+                data-price="13.00"
+                data-img="images/hairoil.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-11.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/highlighter.jpg" /></a>
+              <h3>Highlighter</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Highlighter"
+                data-price="13.00"
+                data-img="images/highlighter.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-21.jpg" /></a>
-              <h3>Produkti 2</h3>
+              <a href="product.html"><img src="images/lipbalm.jpg" /></a>
+              <h3>Lip Balm</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Lip Balm"
+                data-price="13.00"
+                data-img="images/lipbalm.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-31.jpg" /></a>
-              <h3>Produkti 3</h3>
+              <a href="product.html"><img src="images/lipgloss.jpg" /></a>
+              <h3>Lip Gloss</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Lip Gloss"
+                data-price="13.00"
+                data-img="images/lipgloss.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-41.jpg" /></a>
-              <h3>Produkti 4</h3>
+              <a href="product.html"><img src="images/lipliner.jpg" /></a>
+              <h3>Lip Liner</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Lip Liner"
+                data-price="13.00"
+                data-img="images/lipliner.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-51.jpg" /></a>
-              <h3>Produkti 5</h3>
+              <a href="product.html"><img src="images/lipstick.jpg" /></a>
+              <h3>Lip Stick</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Lip Stick"
+                data-price="13.00"
+                data-img="images/lipstick.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-61.jpg" /></a>
-              <h3>Produkti 6</h3>
+              <a href="product.html"><img src="images/makeupbag.jpg" /></a>
+              <h3>Make Up Bag</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Make Up Bag"
+                data-price="13.00"
+                data-img="images/makeupbag.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-71.jpg" /></a>
-              <h3>Produkti 7</h3>
+              <a href="product.html"><img src="images/makeupbrushes.jpg" /></a>
+              <h3>Make Up Brushes</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Make Up Brushes"
+                data-price="13.00"
+                data-img="images/makeupbrushes.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card-1-1">
-              <a href="product.html"><img src="images/prod-81.jpg" /></a>
-              <h3>Produkti 8</h3>
+              <a href="product.html"><img src="images/makeupsponge.jpg" /></a>
+              <h3>Make Up Sponge</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Make Up Sponge"
+                data-price="13.00"
+                data-img="images/makeupsponge.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
-          <button class="carousel-btn right right">&#8250;</button>
+          <button class="carousel-btn right right1">&#8250;</button>
         </div>
       </section>
 
@@ -190,52 +376,116 @@
 
           <div class="carousel-track" id="carouselTrack2">
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-1.jpg" /></a>
-              <h3>Produkti 1</h3>
+              <a href="product.html"><img src="images/mascara.png" /></a>
+              <h3>Mascara</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Mascara"
+                data-price="13.00"
+                data-img="images/mascara.png"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-2.jpg" /></a>
-              <h3>Produkti 2</h3>
+              <a href="product.html"><img src="images/moisturizer.jpg" /></a>
+              <h3>Moisturizer</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Moisturizer"
+                data-price="13.00"
+                data-img="images/moisturizer.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-3.jpg" /></a>
-              <h3>Produkti 3</h3>
+              <a href="product.html"><img src="images/powder.jpg" /></a>
+              <h3>Powder</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Powder"
+                data-price="13.00"
+                data-img="images/powder.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-4.jpg" /></a>
-              <h3>Produkti 4</h3>
+              <a href="product.html"><img src="images/serum.jpg" /></a>
+              <h3>Serum</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Serum"
+                data-price="13.00"
+                data-img="images/serum.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-5.jpg" /></a>
-              <h3>Produkti 5</h3>
+              <a href="product.html"><img src="images/settingspray.jpg" /></a>
+              <h3>Setting Spray</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Setting Spray"
+                data-price="13.00"
+                data-img="images/settingspray.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-6.jpg" /></a>
-              <h3>Produkti 6</h3>
+              <a href="product.html"><img src="images/shampooconditioner.jpg" /></a>
+              <h3>Shampoo & Conditioner</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Shampoo & Conditioner"
+                data-price="13.00"
+                data-img="images/shampooconditioner.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-7.jpg" /></a>
-              <h3>Produkti 7</h3>
+              <a href="product.html"><img src="images/sunscreen.jpg" /></a>
+              <h3>Sun Screen</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Sun Screen"
+                data-price="13.00"
+                data-img="images/sunscreen.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="product-card">
-              <a href="product.html"><img src="images/prod-8.jpg" /></a>
-              <h3>Produkti 8</h3>
+              <a href="product.html"><img src="images/toner.jpg" /></a>
+              <h3>Toner</h3>
               <p>13.00€</p>
-              <button>Add to Cart</button>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Toner"
+                data-price="13.00"
+                data-img="images/toner.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
