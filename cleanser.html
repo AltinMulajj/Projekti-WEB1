@@ -1,13 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makeup Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blush - Perla</title>
+    <link rel="stylesheet" href="product-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
       <div class="top-bar">
         <div class="left">
@@ -66,31 +69,27 @@
         </nav>
       </section>
     </header>
-    
-    <main>
-        <section>
-            <ul style="list-style-type: none;">
-                <li>
-                    <article>
-                        <a href="product.html">
-                            <img src="images/prod-1.jpg"/>
-                            <h3>Produkti 1</h3>
-                            <p>13.00€</p>
-                            <button type="button">Add to Cart</button>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href="product.html">
-                            <img src="images/prod-2.jpg"/>
-                            <h3>Produkti 2</h3>
-                            <p>13.00$</p>
-                            <button type="button">Add to Cart</button>
-                        </a>
-                    </article>
-                </li>
-        </section>
+
+    <main class="product-page">
+      <div class="product-image">
+        <img src="images/cleanser.jpg" alt="Cleanser Product Image" />
+      </div>
+      <div class="product-details">
+        <h2>Cleanser</h2>
+        <p class="price">13.00$</p>
+        <p class="description">
+          Gentle facial cleanser that removes dirt, oil and makeup without stripping skin’s natural moisture.
+        </p>
+        <button
+          class="add-to-cart"
+          data-id="1"
+          data-name="Cleanser"
+          data-price="13.00"
+          data-img="images/cleanser.jpg"
+        >
+          Add to Cart
+        </button>
+      </div>
     </main>
 
     <footer class="footer">
@@ -101,5 +100,7 @@
       </nav>
       <p>&copy; 2025 MakeupStore</p>
     </footer>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
