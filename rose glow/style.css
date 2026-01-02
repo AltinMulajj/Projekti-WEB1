@@ -45,6 +45,7 @@ body {
   font-size: 14px;
   outline: none;
   transition: all 0.3s ease;
+  margin-left: 290px;
 }
 
 .nav {
@@ -60,13 +61,29 @@ body {
   text-decoration: none;
 }
 
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;        
+}
+
 .header-icons svg {
   width: 22px;
   height: 22px;
   fill: none;
-  stroke: #000;
+  stroke: #111;
   stroke-width: 1.4;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
+
+
+.header-icons svg:hover {
+  stroke: #f3a6c8;         
+  transform: scale(1.12);
+}
+
 
 
 
@@ -109,6 +126,7 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+  
 }
 
 
@@ -495,7 +513,7 @@ body {
 }
 
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -507,4 +525,73 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.product-card {
+  position: relative;
+}
 
+
+.product-card {
+  position: relative;
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 40px;              
+  right: 20px;            
+  width: 42px;            
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+.wishlist-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.6;
+}
+
+
+.wishlist-btn:hover svg {
+  fill: #ff8fb1;
+  stroke: #ff8fb1;
+}
+
+
+/* vetëm brenda product of the month */
+.product-image--with-wishlist {
+  position: relative;
+}
+
+.product-image--with-wishlist .wishlist-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.product-image--with-wishlist .wishlist-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #000;
+  stroke-width: 1.6;
+  fill: none;
+}
