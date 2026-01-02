@@ -20,8 +20,12 @@ function renderCart() {
     return;
   }
 
-  cart.forEach((item, i) => {
-    total += item.price * item.quantity;
+cart.forEach((item, i) => {
+  if (!item || !item.name || !item.img || isNaN(item.price) || isNaN(item.quantity)) {
+    return;
+  }
+
+  total += Number(item.price || 0) * Number(item.quantity || 0);
 
     box.innerHTML += `
       <div style="display:flex;gap:20px;padding:15px;border-bottom:1px solid #ddd;">
@@ -66,4 +70,5 @@ function removeItem(i) {
   renderCart();
 }
 
-renderCart();
+document.addEventListener("DOMContentLoaded", renderCart);
+
