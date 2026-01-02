@@ -32,7 +32,7 @@ body {
 }
 
 .search-btn:hover {
-  color: purple;
+  color: rgb(2, 2, 2);
 }
 
 footer {
@@ -73,7 +73,7 @@ nav a {
 
 .product-details .price {
   font-size: 22px;
-  color: purple;
+  color: rgb(24, 9, 24);
 }
 
 .product-details .description {
@@ -82,21 +82,28 @@ nav a {
 }
 
 .add-to-cart {
-  background-color: purple;
-  color: white;
+  background-color: transparent;
+  color: #000;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #000;
   margin-top: 15px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
+
+.add-to-cart:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 
 .nav-menu {
   display: flex;
   justify-content: center;
   gap: 113px;
-  background-color: red;
+  background-color: rgb(235, 137, 137);
   padding: 12px 0;
   list-style: none;
   position: relative;
@@ -138,7 +145,7 @@ nav a {
 }
 
 .dropdown a:hover {
-  color: purple;
+  color: rgb(0, 0, 0);
   transform: translateX(5px);
 }
 
@@ -160,7 +167,7 @@ nav a {
 }
 
 .top-bar .left h1 a {
-  color: purple;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -189,7 +196,7 @@ nav a {
 .top-bar .right a i {
   display: flex;
   font-size: 20px;
-  color: purple;
+  color: rgb(0, 0, 0);
 }
 
 .top-bar form {
