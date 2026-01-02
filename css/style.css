@@ -1,8 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main {
+  flex: 1;
+}
+
 
 * {
   margin: 0;
@@ -58,7 +63,7 @@ body {
 
 
 
-/* ===== HEADER (TOP BAR) ===== */
+
 
 .search-btn {
   background-color: transparent;
@@ -275,4 +280,90 @@ body {
   color: white;
   text-align: center;
   padding: 15px;
+}
+/* ===== CART SIMPLE CLEAN LOOK ===== */
+
+/* rreshti i produktit */
+#cart-items > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+/* imazhi */
+#cart-items img {
+  width: 90px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* emri i produktit */
+#cart-items h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* çmimi */
+#cart-items p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* + dhe − */
+#cart-items button {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#cart-items button:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+#cart-items .remove-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #777;
+  cursor: pointer;
+}
+
+#cart-items .remove-btn:hover {
+  color: #c8102e;
+  text-decoration: underline;
+}
+
+
+#cart-items button:last-child:hover {
+  color: #c8102e;
+  text-decoration: underline;
+}
+
+/* TOTAL */
+#total {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* CHECKOUT */
+a button {
+  margin-top: 20px;
+  padding: 10px 26px;
+  border-radius: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+a button:hover {
+  opacity: 0.85;
 }
