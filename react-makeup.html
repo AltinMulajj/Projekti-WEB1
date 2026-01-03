@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Makeup – React Version</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@mui/material@5/umd/material-ui.development.js"></script>
+
+</head>
+<body>
+
+<div id="root"></div>
+
+<script>
+  const {
+    Container,
+    Grid,
+    Card,
+    CardContent,
+    CardMedia,
+    Typography,
+    Button
+  } = MaterialUI;
+
+  function ProductCard({ product }) {
+    return React.createElement(
+      Card,
+      null,
+      React.createElement(CardMedia, {
+        component: "img",
+        height: "200",
+        image: product.img,
+        alt: product.name
+      }),
+      React.createElement(
+        CardContent,
+        null,
+        React.createElement(Typography, { variant: "h6" }, product.name),
+        React.createElement(Typography, { sx: { mb: 2 } }, product.price + "€"),
+        React.createElement(
+          Button,
+          { variant: "contained", fullWidth: true },
+          "Add to Cart"
+        )
+      )
+    );
+  }
+
+  function MakeupPage() {
+    const products = [
+      {
+        id: 1,
+        name: "Blush",
+        price: 13,
+        img: "images/blush.jpg"
+      },
+      {
+        id: 2,
+        name: "Bronzer",
+        price: 13,
+        img: "images/bronzer.jpg"
+      },
+      {
+        id: 3,
+        name: "Cleanser",
+        price: 13,
+        img: "images/cleanser.jpg"
+      }
+    ];
+
+    return React.createElement(
+      Container,
+      { style: { marginTop: 40 } },
+      React.createElement(
+        Typography,
+        { variant: "h4", gutterBottom: true },
+        "Makeup"
+      ),
+      React.createElement(
+        Grid,
+        { container: true, spacing: 3 },
+        products.map(product =>
+          React.createElement(
+            Grid,
+            { item: true, xs: 12, sm: 6, md: 4, key: product.id },
+            React.createElement(ProductCard, { product })
+          )
+        )
+      )
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    React.createElement(MakeupPage)
+  );
+</script>
+
+</body>
+</html>
+
