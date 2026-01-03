@@ -70,5 +70,4 @@ function removeItem(i) {
   renderCart();
 }
 
-document.addEventListener("DOMContentLoaded", renderCart);
-
+renderCart();

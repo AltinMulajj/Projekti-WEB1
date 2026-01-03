@@ -17,17 +17,11 @@ document.addEventListener("click", function (e) {
 
   const id = btn.dataset.id;
   const name = btn.dataset.name;
-  const price = Number(
-  String(btn.dataset.price || "")
-    .replace("€", "")
-    .replace(",", ".")
-);
-
+  const price = Number(btn.dataset.price);
   const img = btn.dataset.img;
 
   
-if (!id || !name || isNaN(price) || !img) return;
-
+  if (!id || !name || !price || !img) return;
 
   let cart = getCart();
   let product = cart.find(p => p.id === id);

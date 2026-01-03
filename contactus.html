@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Perla Glow</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="left">
+          <h1><a href="../index.html">Perla Glow</a></h1>
+        </div>
+
+        <div class="right">
+          <form
+            style="display: inline"
+            action="search.html"
+            method="get"
+            role="search"
+            target="_self"
+          >
+            <input id="Q" type="search" placeholder="search..." required />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <nav class="search">
+            <a href="signin.html"><i class="fas fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </nav>
+        </div>
+      </div>
+
+      <section class="black">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="new.html">New</a></li>
+
+            <li>
+              <a href="makeup.html">Make Up</a>
+              <div class="dropdown">
+                <a href="product.html">Face</a>
+                <a href="product.html">Eyes</a>
+                <a href="product.html">Lips</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="skincare.html">Skincare</a>
+              <div class="dropdown">
+                <a href="product.html">Cleansers</a>
+                <a href="product.html">Moisturizers</a>
+                <a href="product.html">Masks</a>
+              </div>
+            </li>
+
+            <li><a href="flagrance.html">Fragrance</a></li>
+            <li><a href="hair.html">Hair</a></li>
+            <li><a href="toolsandbrushes.html">Tools & Brushes</a></li>
+            <li><a href="brand.html">Brands</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="page-wrap">
+      <section class="page-hero">
+        <h2>Contact Us</h2>
+        <p>Questions? Orders? We’ll reply as soon as possible.</p>
+      </section>
+
+      <section class="contact-grid">
+        <div class="page-card">
+          <h3>Send a message</h3>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input id="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" type="text" placeholder="How can we help?" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+
+            <button class="page-btn" type="submit">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+        <div class="page-card">
+          <h3>Contact details</h3>
+
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> support@perlaglow.com</p>
+            <p><i class="fa-solid fa-phone"></i> +383 44 000 000</p>
+            <p><i class="fa-solid fa-location-dot"></i> Prishtinë, Kosovë</p>
+          </div>
+
+          <div class="contact-hours">
+            <h4>Working hours</h4>
+            <p>Mon – Fri: 09:00 – 18:00</p>
+            <p>Sat: 10:00 – 15:00</p>
+            <p>Sun: Closed</p>
+          </div>
+
+          <div class="contact-mini">
+            <i class="fa-solid fa-heart"></i>
+            <span>Tip: For order issues, include your order ID.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="instagram.html">Instagram</a>
+      </nav>
+      <p>&copy; 2025 MakeupStore</p>
+    </footer> 
+     <div id="successPopup" class="popup-overlay">
+      <div class="popup-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Message Sent!</h3>
+        <p>Thank you for contacting us. We’ll get back to you shortly.</p>
+        <button id="closePopup" class="page-btn" id="closePopup">OK</button>
+      </div>
+    </div>
+
+    <script src="js/contact-popup.js"></script>
+</html>

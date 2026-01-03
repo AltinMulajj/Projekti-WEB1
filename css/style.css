@@ -281,9 +281,9 @@ main {
   text-align: center;
   padding: 15px;
 }
-/* ===== CART SIMPLE CLEAN LOOK ===== */
 
-/* rreshti i produktit */
+
+
 #cart-items > div {
   display: flex;
   align-items: center;
@@ -291,26 +291,26 @@ main {
   padding: 15px 0;
 }
 
-/* imazhi */
+
 #cart-items img {
   width: 90px;
   height: auto;
   border-radius: 8px;
 }
 
-/* emri i produktit */
+
 #cart-items h4 {
   font-size: 17px;
   font-weight: 500;
 }
 
-/* çmimi */
+
 #cart-items p {
   font-size: 14px;
   color: #666;
 }
 
-/* + dhe − */
+
 #cart-items button {
   background: #f2f2f2;
   border: 1px solid #ccc;
@@ -344,7 +344,7 @@ main {
   text-decoration: underline;
 }
 
-/* TOTAL */
+
 #total {
   margin-top: 30px;
   font-size: 18px;
@@ -352,7 +352,7 @@ main {
   text-align: center;
 }
 
-/* CHECKOUT */
+
 a button {
   margin-top: 20px;
   padding: 10px 26px;
