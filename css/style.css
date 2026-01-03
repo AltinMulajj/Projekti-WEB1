@@ -367,3 +367,41 @@ a button {
 a button:hover {
   opacity: 0.85;
 }
+.no-products {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.no-products h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.no-products p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.no-products .notify-text {
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.notify-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.notify-btn:hover {
+  background: #444;
+}

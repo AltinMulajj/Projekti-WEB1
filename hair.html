@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make Up – Perla Glow</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+
+ <header>
+      <div class="top-bar">
+        <div class="left">
+          <h1><a href="../index.html"> Perla Glow</a></h1>
+        </div>
+
+        <div class="right">
+          <form
+            style="display: inline"
+            action="search.html"
+            method="get"
+            role="search"
+            target="_self"
+          >
+            <input id="Q" type="search" placeholder="search..." required />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <nav class="search">
+            <a href="signin.html"><i class="fas fa-user"></i> </a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </nav>
+        </div>
+      </div>
+
+      <section class="black">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="new.html">New</a></li>
+
+            <li>
+              <a href="makeup.html">Make Up</a>          
+            </li>
+            <li>
+              <a href="skincare.html">Skincare</a>
+             
+            </li>
+            <li><a href="flagrance.html">Fragrance</a></li>
+            <li><a href="hair.html">Hair</a></li>
+            <li><a href="toolsandbrushes.html">Tools & Brushes</a></li>
+            
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+
+<main style="padding: 40px 60px;">
+  <h2 style="margin-bottom: 30px;">Hair</h2>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    "
+  >
+
+
+
+
+   <div class="product-card">
+              <a href="products/shampooconditioner.html"
+                ><img src="images/shampooconditioner.jpg" />
+              </a>
+              <h3>Shampoo & Conditioner</h3>
+              <p>13.00€</p>
+              <button
+                class="add-to-cart"
+                data-id="shampooconditioner"
+                data-name="Shampoo & Conditioner"
+                data-price="13.00"
+                data-img="images/shampooconditioner.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+   <div class="product-card-1-1">
+              <a href="products/hairoil.html"><img src="images/hairoil.jpg" /></a>
+              <h3>Hair Oil</h3>
+              <p>13.00€</p>
+              <button
+                class="add-to-cart"
+                data-id="hairoil"
+                data-name="Hair Oil"
+                data-price="13.00"
+                data-img="images/hairoil.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+   
+        </div> 
+</main> 
+
+
+<footer class="footer">
+  <nav>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="instagram.html">Instagram</a>
+  </nav>
+  <p>&copy; 2025 MakeupStore</p>
+</footer>
+
+<script src="js/script-cart.js"></script>
+</body>
+</html>
