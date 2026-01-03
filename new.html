@@ -21,19 +21,17 @@
         </div>
 
         <div class="right">
-          <form
-            style="display: inline"
-            action="search.html"
-            method="get"
-            role="search"
-            target="_self"
-          >
-            <input id="Q" type="search" placeholder="search..." required />
-            <button type="submit" class="search-btn">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-
+          <form action="/search.html" method="get">
+  <input
+    type="search"
+    name="q"
+    placeholder="search..."
+    required
+  />
+  <button type="submit" class="search-btn">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
           <nav class="search">
             <a href="signin.html"><i class="fas fa-user"></i> </a>
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>

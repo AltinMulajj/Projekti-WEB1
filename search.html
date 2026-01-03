@@ -1,34 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makeup Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/search.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search – Perla Glow</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </head>
 <body>
-    <header>
+
+<header>
       <div class="top-bar">
         <div class="left">
-          <h1><a href="index.html">Welcome to Perla</a></h1>
+          <h1><a href="../index.html"> Perla Glow</a></h1>
         </div>
-
-        <div class="right">
-          <form
-            style="display: inline"
-            action="search.html"
-            method="get"
-            role="search"
-            target="_self"
-          >
-            <input id="Q" type="search" placeholder="search..." required />
-            <button type="submit" class="search-btn">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-
+  <div class="right">
+          <form action="/search.html" method="get">
+  <input
+    type="search"
+    name="q"
+    placeholder="search..."
+    required
+  />
+  <button type="submit" class="search-btn">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
           <nav class="search">
             <a href="signin.html"><i class="fas fa-user"></i> </a>
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -43,43 +44,38 @@
 
             <li>
               <a href="makeup.html">Make Up</a>
-              <div class="dropdown">
-                <a href="product.html">Face</a>
-                <a href="product.html">Eyes</a>
-                <a href="product.html">Lips</a>
-              </div>
+              
             </li>
 
             <li>
-              <a href="skincare.html">Skincare</a>
-              <div class="dropdown">
-                <a href="product.html">Cleansers</a>
-                <a href="product.html">Moisturizers</a>
-                <a href="product.html">Masks</a>
-              </div>
+              <a href="skincare.html">Skincare</a>            
             </li>
-
-            <li><a href="flagrance.html">Flagrance</a></li>
+            <li><a href="flagrance.html">Fragrance</a></li>
             <li><a href="hair.html">Hair</a></li>
             <li><a href="toolsandbrushes.html">Tools & Brushes</a></li>
-            <li><a href="brand.html">Brands</a></li>
+            
           </ul>
         </nav>
       </section>
     </header>
-    
-    <main>
-    <h2 id="search-title"></h2>
-    <div id="search-results" class="product-container"></div>
-  </main>
 
-    <footer class="footer">
+<main class="page-content">
+  <h2>Search results</h2>
+  <div id="search-results" class="products-grid"></div>
+</main>
+
+<footer class="footer">
       <nav>
         <a href="aboutus.html">About Us</a>
         <a href="contactus.html">Contact Us</a>
         <a href="instagram.html">Instagram</a>
       </nav>
-      <p>&copy; 2025 MakeupStore</p>
+      <p>&copy; 2025 Perla Glow</p>
     </footer>
+
+<script src="js/search.js"></script>
+<script src="js/script-cart.js"></script>
+
+
 </body>
 </html>
